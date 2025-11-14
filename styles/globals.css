@@ -8,6 +8,20 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent body scrollbar */
+  margin: 0;
+  padding: 0;
+}
+
+#__next {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Tags */
 .react {
   border: 0.1rem solid rgb(97, 218, 251);

@@ -177,14 +177,14 @@
 .myImage {
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #ff8c00;
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+    border: 4px solid #cc0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
 
 .myImage:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 140, 0, 0.6);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
 }
 
 .imageGlow {
@@ -195,7 +195,7 @@
     bottom: -5px;
     border-radius: 50%;
     z-index: -1;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.3) 0%, rgba(29, 31, 37, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3) 0%, rgba(29, 31, 37, 0) 70%);
 }
 
 .status {

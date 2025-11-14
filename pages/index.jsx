@@ -22,45 +22,44 @@ export default function HomePage() {
     <>
       <div className={styles.container}>
         <div className={styles.background}>
-          <h1>I BUILD</h1>
-          <h1>MAGIC!</h1>
+          <h1>I CREATE</h1>
+          <h1>AURA!</h1>
         </div>
         <div className={styles.foreground}>
           <div className={styles.content}>
-            <h1 className={styles.name}>Ayush Jha</h1>
+            <h1 className={`${styles.name} ${styling.stalinistOne}`}>Ayush Jha</h1>
             <h6 className={styles.bio}>Full-Stack Developer | AI/ML Enthusiast
-              <span className={styles.react}> React.</span></h6>
+              <span className={styles.react}> Wannabe</span></h6>
 
             {/* Skill Icons Section */}
+            
             <div className={styling.skillsContainer}>
-              {/* Skill item for React */}
               <div className={styling.skillItem}>
                 <FontAwesomeIcon icon={faReact} size="3x" className={`${styling.icon} ${styling.reactIcon}`} />
                 <div className={styling.skillText}>React</div>
               </div>
 
-              {/* Skill item for Golang */}
               <div className={styling.skillItem}>
                 <FontAwesomeIcon icon={faGolang} size="3x" className={`${styling.icon} ${styling.wordpressIcon}`} />
                 <div className={styling.skillText}>Golang</div>
               </div>
 
-              {/* Skill item for JavaScript */}
               <div className={styling.skillItem}>
                 <FontAwesomeIcon icon={faJs} size="3x" className={`${styling.icon} ${styling.jsIcon}`} />
                 <div className={styling.skillText}>JavaScript</div>
-              </div>              {/* Skill item for Rust */}
+              </div>
+
               <div className={styling.skillItem}>
                 <FontAwesomeIcon icon={faRust} size="3x" className={`${styling.icon} ${styling.rustIcon}`} />
                 <div className={styling.skillText}>Rust</div>
               </div>
 
-              {/* Skill item for Express.js */}
               <div className={styling.skillItem}>
                 <FontAwesomeIcon icon={faNode} size="3x" className={`${styling.icon} ${styling.nodeIcon}`} />
                 <div className={styling.skillText}>Node.js</div>
               </div>
             </div>
+            
 
 
            <div className={styling.forMobile}>
@@ -73,10 +72,10 @@ export default function HomePage() {
            </div>
           </div>
           {/* <Illustration className={styles.illustration} /> */}
-          {/* Logo image */}
-          <div className={styling.imageWrapper}>
-            <Image src={logo} alt="Sarcastic Geek Logo" className={styling.myImg} />
-          </div>
+        </div>
+        {/* Logo image - positioned below other elements, vertically centered, in right third */}
+        <div className={styling.imageWrapper}>
+          <Image src={logo} alt="Ayush Jha Logo" className={styling.myImg} />
         </div>
       </div>
     </>

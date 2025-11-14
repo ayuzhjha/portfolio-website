@@ -28,8 +28,9 @@ const explorerItems = [
   },
   {
     name: 'github.md',
-    path: '/github',
+    path: 'https://github.com/ayuzhjha',
     icon: 'markdown_icon.svg',
+    isExternal: true,
   },
 ];
 
@@ -82,6 +83,16 @@ const Explorer = () => {
                   />{' '}
                   <p>{item.name}</p>
                 </div>
+              ) : item.isExternal ? (
+                <a href={item.path} target="_blank" rel="noopener noreferrer" className={styles.file}>
+                  <Image
+                    src={`/${item.icon}`}
+                    alt={item.name}
+                    height={18}
+                    width={18}
+                  />{' '}
+                  <p>{item.name}</p>
+                </a>
               ) : (
                 <Link href={item.path} className={styles.file}>
                   <Image

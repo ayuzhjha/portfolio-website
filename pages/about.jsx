@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/About.module.css';
-import brain from '../public/brain.jpg';
+import brain from '../public/1757829188646.png';
 import { useEffect, useState } from 'react';
 
 export default function AboutMe() {
@@ -358,7 +358,7 @@ I'm passionate about building innovative solutions that solve real-world problem
               <a href="/projects" className={styles.terminalButton}>
                 View Projects
               </a>
-              <a href="/github" className={styles.terminalButton}>
+              <a href="https://github.com/ayuzhjha" target="_blank" rel="noopener noreferrer" className={styles.terminalButton}>
                 Check GitHub
               </a>
             </div>

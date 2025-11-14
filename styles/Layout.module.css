@@ -3,6 +3,8 @@
 .main {
   display: flex;
   background: var(--main-bg);
+  height: calc(100vh - 30px - 25px); /* Subtract titlebar and bottombar heights */
+  overflow: hidden;
 }
 
 .content {
@@ -10,28 +12,17 @@
   color: var(--text-color);
   font-family: 'JetBrains Mono', monospace;
   flex: 1;
-  height: 85vh;
+  height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-}
-
-.content {
-  scrollbar-width: 10px;
-  scrollbar-color: var(--accent-color);
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .content::-webkit-scrollbar {
-  width: 15px;
-}
-
-.content::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-bg);
-  border-left: 1px solid #1e1f29;
-}
-
-.content::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-bg);
-  border-left: 1px solid #1e1f29;
+  display: none; /* Chrome, Safari, Opera */
 }
 
 @media screen and (max-width: 600px) {

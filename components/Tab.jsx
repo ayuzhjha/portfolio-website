@@ -6,8 +6,11 @@ import styles from '../styles/Tab.module.css';
 const Tab = ({ icon, filename, path, externalLink }) => {
   const router = useRouter();
 
+  // Check if path is an external URL
+  const isExternal = path && (path.startsWith('http://') || path.startsWith('https://'));
+
   // If it's an external link, use a regular anchor tag
-  if (externalLink) {
+  if (externalLink || isExternal) {
     return (
       <a href={path} target="_blank" rel="noopener noreferrer">
         <div className={styles.tab}>
