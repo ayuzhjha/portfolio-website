@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/About.module.css'; // Import the CSS module 
-import brain from '../public/brain.jpg';
+import brain from '../public/1757829188646.png';
 
 export default function AboutMe() {
   return (
@@ -77,3 +77,4 @@ export async function getStaticProps() {
     props: { title: 'AboutMe' },
   };
 }
+
